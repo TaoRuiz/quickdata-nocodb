@@ -21,7 +21,7 @@ jobs:
       - run: pnpm bootstrap
       - working-directory: ./packages/nocodb-sdk
         run: |
-          pnpm run generate:sdkó
+          pnpm run generate:sdk
           pnpm run build:main
       - working-directory: ./packages/nocodb
         run: pnpm run test
